@@ -1,0 +1,36 @@
+body {
+    font-family: fantasy;
+    font-style: normal;
+    font-variant: normal;
+    color: darkblue;
+}
+
+th.table_title {
+    font-size: 20px;
+    line-height: 26.4px;
+    text-align: left;
+    color: darkred;
+}
+
+.table_column {
+    font-size: 20px;
+    line-height: 26.4px;
+    text-align: center;
+}
+
+legend:first-child{
+    color: orangered;
+}
+
+#submit_button{
+    color: darkgreen;
+    background-color: lightskyblue;
+}
+
+#submit_button {
+    color: darkblue;
+}
+
+select:hover{
+    background-color: lightskyblue;
+}

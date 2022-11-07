@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Приколы</title>
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body body background="https://st2.depositphotos.com/3649705/5390/v/450/depositphotos_53908951-stock-illustration-wave-line-flag-of-russia.jpg">
+<table border="1" cellpadding="10" cellspacing="0" width="100%">
+    <tr>
+        <th colspan=2 class="table_title">
+            Лабораторная работа №1<br>
+            Студент: Кудлай Никита Романович<br>
+            Группа: P32141<br>
+            Вариант: 1441<br>
+        </th>
+    </tr>
+    <tr class="table_column">
+        <th width="25%">Координатная плоскость</th>
+        <th width="75%">Ввод значений</th>
+    </tr>
+    <tr class="table_column">
+        <th>
+            <img src="areas.png">
+        </th>
+        <th>
+            <form class="validate_form" action="validate.php" id ="answers" method="get" onsubmit="return validateAll()">
+                    <legend>X:</legend>
+                <select required name="x" class="x">
+                <option value="-2">-2</option>
+                <option value="-1.5">-1.5</option>
+                <option value="-1">-1</option>
+                <option value="-0.5">-0.5</option>
+                <option value="0">0</option>
+                <option value="0.5">0.5</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                </select> <br>
+                <legend>Y:</legend>
+                <input autocomplete="off" maxlength="8" type="text" name="y" class="y" size="16" placeholder="От -5 до 3"  ><br>
+                    <legend>R:</legend>
+                <div>
+                    <input  type="radio" name="r" class="r" id="r_value_1" value="1" > 1
+                    <input  type="radio" name="r" class="r" id="r_value_1.5" value="1.5"> 1.5
+                    <input  type="radio" name="r" class="r" id="r_value_2" value="2"> 2
+                    <input  type="radio" name="r" class="r" id="r_value_2.5" value="2.5"> 2.5
+                    <input  type="radio" name="r" class="r" id="r_value_3" value="3"> 3
+                </div>
+                <legend>Как выводить таблицу?</legend>
+                <select required name="t" class="t">
+                    <option value="0">На новой странице</option>
+                    <option value="1">На этой странице</option>
+                </select>
+                <br> <br>
+                <input class="submit_button" type="submit" name="submit" id="submit_button" value="Восстань из мертвых, прога">
+            </form>
+        </th>
+    </tr>
+    <tr>
+    </tr>
+</table>
+<script src="validate_form.js"></script>
+</body>
+<link rel="stylesheet" href="design.css">
+</html>
